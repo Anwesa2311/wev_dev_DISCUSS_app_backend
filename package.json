@@ -1,0 +1,31 @@
+{
+  "name": "webdev-the-few-finalproj-backend",
+  "version": "1.0.0",
+  "description": "Web dev project backend",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:mac": "mongod --config /usr/local/etc/mongod.conf",
+    "dev": "nodemon index.js",
+    "deploy": "git push heroku main",
+    "format": "npm run format:prettier",
+    "format:prettier": "node_modules/.bin/prettier --config .prettierrc \"**/*.{ts,css,less,js}\" --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.ccs.neu.edu/NEU-CS5610-SU22/webdev-the-few-finalproj-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongodb": "^4.8.1",
+    "prettier": "^2.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
